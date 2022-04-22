@@ -1,0 +1,389 @@
+body {
+    background-color: #202020;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    color: rgb(20, 10, 10);
+
+}
+
+P {
+
+    font-family: "ArIaL", serif;
+    font-size: 30px;
+    color: rgb(220, 204, 204);
+    line-height: 45px;
+}
+/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+
+
+/*888888888888888888888888888888888888 CERRAR 8888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.cerrar{
+ 
+    float:right;
+    border:1px solid rgb(112, 98, 98);
+    width: 50px;
+    height: 50px;
+    background-color:#4343435c;
+    transition:0.5s;
+
+}
+.cerrar:hover{ 
+    padding-right:20px;
+    opacity:90%;
+}
+
+.cerrar ion-icon{
+    color:#fff;
+    width: 100%;
+    height: 100%;
+
+} 
+/*888888888888888888888888888888888888 ENTRAR A LA FOTO 8888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.modulo {
+    display:none;
+}
+.modulo:target {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    padding-top:30px;
+ 
+
+}
+
+.modulo:target img {
+    object-fit:contain;
+    position: relative;
+    margin-top:35px;
+    left: 15%;
+    right: 10%;
+    width: 65%;
+    height: 80%;
+    transition: 1s;
+}
+/*888888888888888888888888888888888888 CAJA CONTENEDORA de CAJA RIGHT Y CAJA LEFT 8888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.contain-box {
+
+    top:80px;
+    left: 4%;
+    position: relative;
+    width: 90%;
+    height: 400px;
+    /*  border:1px solid white; */
+    display: inline-block;
+    margin-bottom:5%;
+ 
+}
+
+.box-left {
+    
+    float: left;
+    width: 48%;
+    height: 100%;
+
+}
+
+.box-right {
+  
+    float: right;
+    width: 48%;
+    height: 100%;
+    margin-left: 15px;
+
+
+}
+
+.titulo {
+  
+    display: block;
+    width: 100%;
+    height: 15%;
+}
+
+.titulo h1:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(188, 131, 57);
+    border: 1px solid grey;
+}
+
+.titulo h1 {
+    
+    text-align: center;
+    background-color: rgb(203, 125, 22);
+    transition: 1s;
+}
+
+.texto {
+
+    display: block;
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+}
+
+.box-left img {
+    /* display: inline-flex;*/
+    object-fit:cover;
+    
+    width: 80%;
+    height: 80%;
+    
+    margin-left: 15%;
+    margin-top: 50px;
+    transition:.5s;
+
+}
+
+.box-right img {
+    object-fit:cover;
+   /* display: inline-flex;*/
+    width: 100%;
+    height: 100%;
+    
+    transition:.5s;
+}
+
+.box-left img:hover {
+    border-radius: 2%;
+
+ transform: translate(0px,-10px);
+ box-shadow: 5px 5px 10px rgb(134, 126, 126);
+
+}
+
+.box-right img:hover {
+    border-radius: 2%;
+    transform: translate(0px,-10px);
+    box-shadow: 5px 5px 10px rgb(134, 126, 126);
+
+}
+/*88888888888888888888888888888888888888888888888888 LINEA SEPARATORIA 888888888888888888888888888888888888888888888888888888888888888888*/
+
+.linea img {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    height: 25px;
+    width: 100%;
+}
+
+/*888888888888888888888888888888888888888888888888  FOTO INICIAL MAS REDES 88888888888888888888888888888888888888888888888888888888888888888888*/
+
+.fotoPrincipal {
+
+    display: inline-block;
+
+    position: relative;
+    width: 90%;
+    height: 500px;
+    left:4%;
+    top:80px;
+    margin-bottom: 10%;
+}
+
+.fotoPrincipal img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contain-redes {
+    position: sticky;
+    display: inline-block;
+    height: 200px;
+    width: 3%;
+    top: 70px;
+    margin-left: 60px;
+
+}
+
+.img-redes {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    margin-bottom: 10px;
+    background: #434343;
+    border-radius:100%;
+    padding: 0px 6px;
+    transition: 1s;
+    border:1px solid white;
+}
+
+.img-redes:hover {
+    border:none;
+    background: #282727;
+    right: 1px;
+
+}
+
+.img-redes ion-icon {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+.img-redes ion-icon:hover {
+   color:#f2f2f2;
+}
+.img-redes a:visited{
+    color:#000000;
+}
+/*88888888888888888888888888888888888888888  BARRA DE NAVEGACION FIXED 888888888888888888888888888888888888888888888888888888*/
+
+.contain-Menu {
+ display: flex;
+    background: #434343;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 150;
+}
+
+.contain-Menu img {
+    position: relative;
+    width: 7%;
+    height: 100%;
+    display: inline-block;
+    left: 60px;
+    transition: 0.5s;
+}
+
+.contain-Menu img:hover {
+    opacity: 55%;
+}
+
+.header {
+
+    position: relative;
+    left: 10%;
+    height: 100%;
+}
+
+ul,ol {
+    display: flex;
+    list-style: none;
+}
+
+.nav li a {
+    
+    display: flex;
+    background-color: #434343;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+
+
+}
+
+.nav li a:hover {
+    color: #000000;
+    background-color: #706969;
+}
+
+.nav>li:hover {
+    background-color: #706969;
+}
+
+.nav>li {
+    
+    float: left;
+    margin-left: 30px;
+    height: 100%;
+    padding-top: 11px;
+    /*****************/
+
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+    
+}
+.nav li ul  {
+    border-bottom:1px solid rgb(255, 255, 255);
+
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+/*888888888888888888888888888888888888888 RESPONSIVE 88888888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+@media only screen and (max-width:911px) {
+
+    /*MENU*/
+  /* .contain-Menu{
+       display:none;
+   }*/
+
+    /*REDES LOGOS*/
+
+    .fotoPrincipal img {
+        object-fit: cover;
+
+    }
+
+    .contain-redes {
+
+        position: relative;
+        height: 40px;
+        width: 90%;
+        top: 30px;
+        left: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: Space-around;
+
+    }
+
+    .img-redes {
+        display: inline-block;
+        position: relative;
+        width: 25px;
+        height: 100%;
+        margin-right: 20px;
+        margin-left: 50px;
+        background: #434343;
+        border-radius: 100%;
+        padding: 0px 6px;
+    }
+
+    .img-redes a img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+}
