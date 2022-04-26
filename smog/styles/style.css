@@ -7,6 +7,7 @@ body {
 * {
     padding: 0px;
     margin: 0px;
+    
 }
 
 h1 {
@@ -21,38 +22,78 @@ P {
     color: rgb(220, 204, 204);
     line-height: 45px;
 }
-/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+td {
+    color: white;
+    font-size: x-large;
+}
+td:hover {
+  
+    background-color: #fff;
+    color:black;
+}
+th {
+    color: #f2f2f2;
+    font-size: xx-large;
+    transition: .5s;
+}
+th:hover {
+    color:black;
+}
+
+table {
+    width: 100%;
+background-color:rgb(66, 64, 61);
+}
+
+caption {
+    color: #f2f2f2
+}
+
+/*888888888888888888888888888888888888888 TABLA 8888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.contain-tabla {
+    position: relative;
+    display:flex;
+    margin-top: 100px;
+    width: 70%;
+    left: 13%;
 
 
+
+}
 
 /*888888888888888888888888888888888888 CERRAR 8888888888888888888888888888888888888888888888888888888888888888888888888*/
 
-.cerrar{
- 
-    float:right;
-    border:1px solid rgb(112, 98, 98);
+.cerrar {
+
+    float: right;
+    border: 1px solid rgb(112, 98, 98);
     width: 50px;
     height: 50px;
-    background-color:#4343435c;
-    transition:0.5s;
+    background-color: #4343435c;
+    transition: 0.5s;
 
 }
-.cerrar:hover{ 
-    padding-right:20px;
-    opacity:90%;
+
+.cerrar:hover {
+    padding-right: 20px;
+    opacity: 90%;
 }
 
-.cerrar ion-icon{
-    color:#fff;
+.cerrar ion-icon {
+    color: #fff;
     width: 100%;
     height: 100%;
 
-} 
+}
+
 /*888888888888888888888888888888888888 ENTRAR A LA FOTO 8888888888888888888888888888888888888888888888888888888888888888888888888*/
 
 .modulo {
-    display:none;
+    display: none;
 }
+
 .modulo:target {
     display: inline-block;
     visibility: visible;
@@ -65,38 +106,39 @@ P {
     width: 100%;
     height: 100%;
     z-index: 200;
-    padding-top:30px;
- 
+    padding-top: 30px;
+
 
 }
 
 .modulo:target img {
-    object-fit:contain;
+    object-fit: contain;
     position: relative;
-    margin-top:35px;
+    margin-top: 35px;
     left: 15%;
     right: 10%;
     width: 65%;
     height: 80%;
     transition: 1s;
 }
+
 /*888888888888888888888888888888888888 CAJA CONTENEDORA de CAJA RIGHT Y CAJA LEFT 8888888888888888888888888888888888888888888888888888888888888888888888888*/
 
 .contain-box {
 
-    top:80px;
+    top: 80px;
     left: 4%;
     position: relative;
     width: 90%;
     height: 400px;
     /*  border:1px solid white; */
     display: inline-block;
-    margin-bottom:5%;
- 
+    margin-bottom: 5%;
+
 }
 
 .box-left {
-    
+
     float: left;
     width: 48%;
     height: 100%;
@@ -104,7 +146,7 @@ P {
 }
 
 .box-right {
-  
+
     float: right;
     width: 48%;
     height: 100%;
@@ -114,7 +156,7 @@ P {
 }
 
 .titulo {
-  
+
     display: block;
     width: 100%;
     height: 15%;
@@ -127,7 +169,7 @@ P {
 }
 
 .titulo h1 {
-    
+
     text-align: center;
     background-color: rgb(203, 125, 22);
     transition: 1s;
@@ -143,40 +185,41 @@ P {
 
 .box-left img {
     /* display: inline-flex;*/
-    object-fit:cover;
-    
+    object-fit: cover;
+
     width: 80%;
     height: 80%;
-    
+
     margin-left: 15%;
     margin-top: 50px;
-    transition:.5s;
+    transition: .5s;
 
 }
 
 .box-right img {
-    object-fit:cover;
-   /* display: inline-flex;*/
-    width: 100%;
-    height: 100%;
-    
-    transition:.5s;
+    object-fit: cover;
+    /* display: inline-flex;*/
+    width: 90%;
+    height: 90%;
+
+    transition: .5s;
 }
 
 .box-left img:hover {
     border-radius: 2%;
 
- transform: translate(0px,-10px);
- box-shadow: 5px 5px 10px rgb(134, 126, 126);
+    transform: translate(0px, -10px);
+    box-shadow: 5px 5px 10px rgb(14, 13, 13);
 
 }
 
 .box-right img:hover {
     border-radius: 2%;
-    transform: translate(0px,-10px);
-    box-shadow: 5px 5px 10px rgb(134, 126, 126);
+    transform: translate(0px, -10px);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
 
 }
+
 /*88888888888888888888888888888888888888888888888888 LINEA SEPARATORIA 888888888888888888888888888888888888888888888888888888888888888888*/
 
 .linea img {
@@ -195,8 +238,8 @@ P {
     position: relative;
     width: 90%;
     height: 500px;
-    left:4%;
-    top:80px;
+    left: 4%;
+    top: 80px;
     margin-bottom: 10%;
 }
 
@@ -222,14 +265,14 @@ P {
     height: 25%;
     margin-bottom: 10px;
     background: #434343;
-    border-radius:100%;
+    border-radius: 100%;
     padding: 0px 6px;
     transition: 1s;
-    border:1px solid white;
+    border: 1px solid white;
 }
 
 .img-redes:hover {
-    border:none;
+    border: none;
     background: #282727;
     right: 1px;
 
@@ -241,16 +284,19 @@ P {
     object-fit: contain;
 
 }
+
 .img-redes ion-icon:hover {
-   color:#f2f2f2;
+    color: #f2f2f2;
 }
-.img-redes a:visited{
-    color:#000000;
+
+.img-redes a:visited {
+    color: #000000;
 }
+
 /*88888888888888888888888888888888888888888  BARRA DE NAVEGACION FIXED 888888888888888888888888888888888888888888888888888888*/
 
 .contain-Menu {
- display: flex;
+    display: flex;
     background: #434343;
     width: 100%;
     height: 60px;
@@ -274,17 +320,19 @@ P {
 .header {
 
     position: relative;
+    right:10%;
     left: 10%;
     height: 100%;
 }
 
-ul,ol {
+ul,
+ol {
     display: flex;
     list-style: none;
 }
 
 .nav li a {
-    
+
     display: flex;
     background-color: #434343;
     color: #fff;
@@ -305,7 +353,7 @@ ul,ol {
 }
 
 .nav>li {
-    
+
     float: left;
     margin-left: 30px;
     height: 100%;
@@ -326,10 +374,11 @@ ul,ol {
 
 .nav li ul li {
     position: relative;
-    
+
 }
-.nav li ul  {
-    border-bottom:1px solid rgb(255, 255, 255);
+
+.nav li ul {
+    border-bottom: 1px solid rgb(255, 255, 255);
 
 }
 
@@ -338,12 +387,14 @@ ul,ol {
     top: 0px;
 }
 
+
+
 /*888888888888888888888888888888888888888 RESPONSIVE 88888888888888888888888888888888888888888888888888888888888888888888888888888*/
 
 @media only screen and (max-width:911px) {
 
     /*MENU*/
-  /* .contain-Menu{
+    /* .contain-Menu{
        display:none;
    }*/
 
