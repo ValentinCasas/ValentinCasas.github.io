@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-color: #202020;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,7 +12,7 @@ body {
 * {
     padding: 0px;
     margin: 0px;
-    
+
 }
 
 h1 {
@@ -28,70 +33,99 @@ td {
     font-size: x-large;
     padding: 8px;
 }
+
 td:hover {
-  
+
     background-color: #fff;
-    color:black;
+    color: black;
 }
+
 th {
     color: #f2f2f2;
     font-size: xx-large;
     transition: .5s;
 }
+
 th:hover {
-    color:black;
+    color: black;
 }
 
 table {
     width: 100%;
-background-color:rgb(66, 64, 61);
+    background-color: rgb(66, 64, 61);
 }
 
 caption {
     color: #f2f2f2
 }
+
 /*888888888888888888888888888888888888888 GALERIA 8888888888888888888888888888888888888888888888888888888888888888888888*/
 
+input {
+    background-color: rgb(117, 115, 112);
+    color: antiquewhite;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 80px;
+    display: block;
+}
+
+input:hover {
+    background-color: antiquewhite;
+    color: rgb(117, 115, 112);
+}
+
+.contain-inputs {
+    position: relative;
+    top: 70px;
+    background-color: rgb(213, 201, 185);
+    width: 100%;
+    display: block;
+    border: 2px solid black;
+}
 
 
 /*888888888888888888888888888888888 CIRCULOS CONTENEDORES  88888888888888888888888888888888888888888888888888888888*/
 
-.contain-circulo{
-    display:flex;
-    display:inline-block;
-    height:30em;
-    width:40%;
+.contain-circulo {
+    display: flex;
+    display: inline-block;
+    height: 30em;
+    width: 40%;
     border-radius: 100%;
-    border:1px solid hsl(0, 0%, 0%);
-    background-color:rgb(172, 160, 160);
-    margin-left:5%;
-    margin-bottom:90px;
-    margin-top:50px;
+    border: 1px solid hsl(0, 0%, 0%);
+    background-color: rgb(172, 160, 160);
+    margin-left: 5%;
+    margin-bottom: 90px;
+    margin-top: 50px;
 
 }
-.texto-circulo{
-    
-    display:block;
-    position:relative;
-    top:17%;
-    left:13%;
-    width:75%;
-   height:19.5em;
-  /* border:2px solid rgb(14, 13, 13);*/
-   overflow-y: auto;
-   overflow-wrap:break-word;
+
+.texto-circulo {
+
+    display: block;
+    position: relative;
+    top: 17%;
+    left: 13%;
+    width: 75%;
+    height: 19.5em;
+    /* border:2px solid rgb(14, 13, 13);*/
+    overflow-y: auto;
+    overflow-wrap: break-word;
 }
 
-.texto-circulo p{
-  color:black;
-  font-size: larger;
-  line-height:1.5em;
+.texto-circulo p {
+    color: black;
+    font-size: larger;
+    line-height: 1.5em;
 }
+
 /*888888888888888888888888888888888888888 TABLA 8888888888888888888888888888888888888888888888888888888888888888888888*/
 
 .contain-tabla {
     position: relative;
-    display:flex;
+    display: flex;
     margin-top: 100px;
     width: 70%;
     left: 13%;
@@ -357,7 +391,7 @@ caption {
 .header {
 
     position: relative;
-    right:10%;
+    right: 10%;
     left: 10%;
     height: 100%;
 }
