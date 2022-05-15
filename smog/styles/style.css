@@ -240,12 +240,13 @@ caption {
 .contain-tabla {
     position: relative;
     display: flex;
-    margin-top: 100px;
+    margin-top:100px;
+    margin-left:18%;
     width: 70%;
-    left: 13%;
-
-
-
+}
+.contain-tabla table{
+    width:95%;
+    height:95%;
 }
 
 /*888888888888888888888888888888888888 CERRAR 8888888888888888888888888888888888888888888888888888888888888888888888888*/
@@ -572,7 +573,7 @@ ol {
 /*88888888888888888888888888888888888888 SCROLL BAR 8888888888888888888888888888888888888888888888888888888888*/
 
 ::-webkit-scrollbar{
-    width:20px;
+    width:.8em;
 }
 ::-webkit-scrollbar-track{
     background-color: #434343;
@@ -593,10 +594,7 @@ ol {
 
     /*REDES LOGOS*/
 
-    .fotoPrincipal img {
-        object-fit: cover;
 
-    }
 
     .contain-redes {
 
