@@ -517,13 +517,12 @@ ol {
 }
 
 .nav li a {
-
     display: flex;
     background-color: #434343;
     color: #fff;
     text-decoration: none;
     padding: 15px 15px;
-    display: block;
+    
 
 
 }
@@ -538,9 +537,7 @@ ol {
 }
 
 .nav>li {
-
-    float: left;
-    margin-left: 30px;
+    margin-left: 5%;
     height: 100%;
     padding-top: 11px;
     /*****************/
@@ -575,14 +572,14 @@ ol {
 /*88888888888888888888888888888888888888 SCROLL BAR 8888888888888888888888888888888888888888888888888888888888*/
 
 ::-webkit-scrollbar{
-    width:10px;
+    width:20px;
 }
 ::-webkit-scrollbar-track{
     background-color: #434343;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #b6a6a6;
-    border-radius: 50px;
+    background-color: rgb(172, 160, 160);
+   
 }
 
 /*888888888888888888888888888888888888888 RESPONSIVE 88888888888888888888888888888888888888888888888888888888888888888888888888888*/
