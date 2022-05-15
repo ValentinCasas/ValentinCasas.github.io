@@ -6,6 +6,7 @@ html {
 body {
     background-color: #202020;
     font-family: Arial, Helvetica, sans-serif;
+    
 
 }
 
@@ -58,33 +59,146 @@ table {
 caption {
     color: #f2f2f2
 }
-
 /*888888888888888888888888888888888888888 GALERIA 8888888888888888888888888888888888888888888888888888888888888888888888*/
 
-input {
-    background-color: rgb(117, 115, 112);
-    color: antiquewhite;
+
+
+
+/*888888888888888888888888888888888888888 FORMULARIO 88888888888888888888888888888888888888888888888888888888888*/
+
+.box-right #form {
+  position: relative;
+  width: 90%;
+  margin: 50px auto 100px auto;
+}
+
+.box-right input {
+  width: 90%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+
+  transition: all 0.5s;
+
+}
+
+.box-right input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+.box-right textarea {
+    width: 90%;
+  max-width: 90%;
+  height: 110px;
+  max-height: 150px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+}
+
+.box-right textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+.box-right #submit {
+    position:relative;
+    right:25%;
+    float:right;
+  width: 50%;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  color: #b3aca7;
+  
+  outline:none;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+.box-right #submit:hover {
+  color: #e2dedb;
+}
+
+
+.box-left #form {
     position: relative;
-    left: 25%;
+    width: 90%;
+    margin: 50px auto 100px auto;
+  }
+  
+  .box-left input {
+    width: 90%;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #726659;
+    
+    border: solid 1px #b3aca7;
+  
+    transition: all 0.5s;
+  
+  }
+  
+  .box-left input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  .box-left textarea {
+      width: 90%;
+    max-width: 90%;
+    height: 110px;
+    max-height: 150px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #726659;
+    
+    border: solid 1px #b3aca7;
+  }
+  
+  .box-left textarea:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  .box-left #submit {
+      position:relative;
+      right:25%;
+      float:right;
     width: 50%;
-    height: 80px;
-    display: block;
-}
-
-input:hover {
-    background-color: antiquewhite;
-    color: rgb(117, 115, 112);
-}
-
-.contain-inputs {
-    position: relative;
-    top: 70px;
-    background-color: rgb(213, 201, 185);
-    width: 100%;
-    display: block;
-    border: 2px solid black;
-}
-
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    color: #b3aca7;
+    
+    outline:none;
+    
+    border: solid 1px #b3aca7;
+    border-top: none;
+  }
+  
+  .box-left #submit:hover {
+    color: #e2dedb;
+  }
+  
 
 /*888888888888888888888888888888888 CIRCULOS CONTENEDORES  88888888888888888888888888888888888888888888888888888888*/
 
@@ -177,7 +291,7 @@ input:hover {
     width: 100%;
     height: 100%;
     z-index: 200;
-    padding-top: 30px;
+   
 
 
 }
@@ -209,7 +323,7 @@ input:hover {
 }
 
 .box-left {
-
+    
     float: left;
     width: 48%;
     height: 100%;
@@ -221,7 +335,7 @@ input:hover {
     float: right;
     width: 48%;
     height: 100%;
-    margin-left: 15px;
+   
 
 
 }
@@ -264,7 +378,7 @@ input:hover {
     margin-left: 15%;
     margin-top: 50px;
     transition: .5s;
-
+    
 }
 
 .box-right img {
@@ -458,7 +572,18 @@ ol {
     top: 0px;
 }
 
+/*88888888888888888888888888888888888888 SCROLL BAR 8888888888888888888888888888888888888888888888888888888888*/
 
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #434343;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #b6a6a6;
+    border-radius: 50px;
+}
 
 /*888888888888888888888888888888888888888 RESPONSIVE 88888888888888888888888888888888888888888888888888888888888888888888888888888*/
 
