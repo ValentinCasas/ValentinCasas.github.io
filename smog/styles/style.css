@@ -64,20 +64,64 @@ caption {
 
 
 
+/*8888888888888888888888888888888888888888 FINAL 888888888888888888888888888888888888888888888888888888888888888888*/
+
+.contain-final{
+    display:block;
+    position:relative;
+  margin-left:-5%;
+  margin-right:-6.5%;
+   
+    height:2.5em;
+    background-color: black;
+}
+
+.cajaHija{
+    display:inline-block;
+    height:1.5em;
+    margin:.4em;
+    background:rgba(67, 64, 64, 0.6);
+    border-radius: 5%;
+}
+.cajaHija p{
+    position:relative;
+font-size: medium;
+bottom:.7em;
+}
+.cajaHija ion-icon{
+
+    color:rgb(255, 243, 5);
+position:relative;
+margin:.4em;
+}
+
+.cajaHija:hover{
+    background:rgb(165, 160, 160);
+    border-radius: 0%;
+}
+
+.cajaHija p:hover{
+    color:rgba(0, 0, 0, 0.6);
+    position:relative;
+font-size: medium;
+bottom:.7em;
+}
+
+
 /*888888888888888888888888888888888888888 FORMULARIO 88888888888888888888888888888888888888888888888888888888888*/
 
-.box-right #form {
+.box-right #form,.box-left #form {
   position: relative;
   width: 90%;
   margin: 50px auto 100px auto;
 }
 
-.box-right input {
+.box-right input,.box-left input {
   width: 90%;
   height: 50px;
   padding: 0px 15px 0px 15px;
   
-  background: transparent;
+  background: #434343;
   outline: none;
   color: #726659;
   
@@ -87,19 +131,20 @@ caption {
 
 }
 
-.box-right input:hover {
+.box-right input:hover,.box-left input:hover {
   background: #b3aca7;
   color: #e2dedb;
 }
 
-.box-right textarea {
+.box-right textarea,.box-left textarea {
     width: 90%;
   max-width: 90%;
+  min-width: 70%;
   height: 110px;
   max-height: 150px;
   padding: 15px;
   
-  background: transparent;
+  background-color:#202020;
   outline: none;
   
   color: #726659;
@@ -107,16 +152,15 @@ caption {
   border: solid 1px #b3aca7;
 }
 
-.box-right textarea:hover {
+.box-right textarea:hover,.box-left textarea:hover {
   background: #b3aca7;
   color: #e2dedb;
 }
 
-.box-right #submit {
+.box-right #submit,.box-left #submit {
     position:relative;
-    right:25%;
-    float:right;
-  width: 50%;
+    float:left;
+  width: 48.5%;
   padding: 0;
   margin: -5px 0px 0px 0px;
   
@@ -124,81 +168,17 @@ caption {
   
   outline:none;
   
-  border: solid 1px #b3aca7;
-  border-top: none;
+  border: 1px solid #b3aca7;
+ 
 }
 
-.box-right #submit:hover {
+.box-right #submit:hover,.box-left #submit:hover {
   color: #e2dedb;
 }
-
-
-.box-left #form {
-    position: relative;
-    width: 90%;
-    margin: 50px auto 100px auto;
-  }
-  
-  .box-left input {
-    width: 90%;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-    
-    background: transparent;
-    outline: none;
-    color: #726659;
-    
-    border: solid 1px #b3aca7;
-  
-    transition: all 0.5s;
-  
-  }
-  
-  .box-left input:hover {
-    background: #b3aca7;
-    color: #e2dedb;
-  }
-  
-  .box-left textarea {
-      width: 90%;
-    max-width: 90%;
-    height: 110px;
-    max-height: 150px;
-    padding: 15px;
-    
-    background: transparent;
-    outline: none;
-    
-    color: #726659;
-    
-    border: solid 1px #b3aca7;
-  }
-  
-  .box-left textarea:hover {
-    background: #b3aca7;
-    color: #e2dedb;
-  }
-  
-  .box-left #submit {
-      position:relative;
-      right:25%;
-      float:right;
-    width: 50%;
-    padding: 0;
-    margin: -5px 0px 0px 0px;
-    
-    color: #b3aca7;
-    
-    outline:none;
-    
-    border: solid 1px #b3aca7;
-    border-top: none;
-  }
-  
-  .box-left #submit:hover {
-    color: #e2dedb;
-  }
-  
+/*
+  .invalid {
+    border: 2px solid #ff0000;
+    }*/
 
 /*888888888888888888888888888888888 CIRCULOS CONTENEDORES  88888888888888888888888888888888888888888888888888888888*/
 

@@ -17,12 +17,12 @@
     <div id="principio"></div>
 
     <div class="contain-Menu">
-       <img src="img\logo-pulmon (2).png">
+        <img src="img\logo-pulmon (2).png">
         <div class="header">
             <ul class="nav">
                 <li><a href="">INICIO</a></li>
 
-               <li><a href="tabla.html" target="_blanck">TABLA</a>
+                <li><a href="tabla.html" target="_blanck">TABLA</a>
                     <ul>
                         <li><a>PM2.5</a>
 
@@ -78,12 +78,12 @@
                     </ul>
                 </li>
 
-                <li><a  href="carrousel.html" target="_blanck">CARROUSEL</a></li>
+                <li><a href="carrousel.html" target="_blanck">CARROUSEL</a></li>
 
                 <li><a>FORMULARIO</a>
                     <ul>
                         <li><a href="#form1">form 1</a></li>
-    
+
                     </ul>
                 </li>
 
@@ -92,14 +92,14 @@
     </div>
     <!--8888888888888888888888888888888 FOTO INICIAL MAS REDES 8888888888888888888888888888888888888888888888888888888888888888888888-->
     <div class="fotoPrincipal">
-         <img src="img\smog.jpg">  
+        <img src="img\smog.jpg">
     </div>
     <div class="contain-redes">
         <div class="img-redes">
-            <a href="">
-                <ion-icon name="warning-outline"></ion-icon>
+            <a href="#final">
+                <ion-icon name="person-outline"></ion-icon>
+
             </a>
-            <!--    <a href=""><img src="C:\Users\l2\Desktop\smog\img\logo-nav.png"></a>  -->
         </div>
         <div class="img-redes">
             <a href="tabla.html" target="_blank">
@@ -111,13 +111,18 @@
                 <ion-icon name="home-outline"></ion-icon>
             </a>
         </div>
+       
+        
+        
     </div>
     <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
     <div class="contain-box" id="smog-queEs">
         <div class="box-left">
             <div class="titulo">
-               <marquee direction="left" behavior=scroll scrollamount="8"><h1>¿QUÉ ES EL SMOG?</h1></marquee>
+                <marquee direction="left" behavior=scroll scrollamount="8">
+                    <h1>¿QUÉ ES EL SMOG?</h1>
+                </marquee>
             </div>
             <div class="texto">
                 <p>El smog es una forma de contaminacion ambiental que afecta al aire como tal,
@@ -157,7 +162,9 @@
         <div class="box-right">
 
             <div class="titulo">
-                <marquee direction="left" behavior=scroll scrollamount="8">  <h1>¿COMO SE ORIGINA?</h1></marquee>
+                <marquee direction="left" behavior=scroll scrollamount="8">
+                    <h1>¿COMO SE ORIGINA?</h1>
+                </marquee>
             </div>
             <div class="texto">
                 <p>Se debe a una combinacion de factores:
@@ -406,12 +413,12 @@
 
         <div class="contain-circulo">
             <div class="texto-circulo">
-                <p> Si bien el SMOG es visible cuando está presente en la atmosfera, el uso de 
-                    detectores de SMOG y sistemas de monitoreo apropiados puede actuar como 
-                sistemas de alerta temprana. </p>
+                <p> Si bien el SMOG es visible cuando está presente en la atmosfera, el uso de
+                    detectores de SMOG y sistemas de monitoreo apropiados puede actuar como
+                    sistemas de alerta temprana. </p>
                 <p> Los departamentos de meteorología respectivos pueden ayudar con esto, instalando
                     equipos de monitoreo que registren constantemente la cantidad de emisiones
-                y particulas del aire. </p>
+                    y particulas del aire. </p>
 
 
 
@@ -420,50 +427,122 @@
 
         <div class="contain-circulo">
             <div class="texto-circulo">
-                <p> Tal estrategia es el índice de calidad del aire o la ley 
+                <p> Tal estrategia es el índice de calidad del aire o la ley
                     de aire limpio que se utiliza para reportar y monitorear las concentraciones
-                relativas de contaminantes comunes del aire y el ozono a nivel del suelo. </p>
+                    relativas de contaminantes comunes del aire y el ozono a nivel del suelo. </p>
                 <p> Sin embargo, esta medida solo monitorea los niveles de SMOG que causan
                     contaminantes en el aire y, posteriormente, ayuda a establecer estrategias
-                que pueden reducir las emisiones y la contaminación del aire. </p>
+                    que pueden reducir las emisiones y la contaminación del aire. </p>
                 <p> Las medidas preventivas son las mejores en pirmer lugar. </p>
             </div>
         </div>
 
         <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
-
-
         <div class="linea">
             <img src="img\linea.png">
         </div>
+        <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
+
+        <div class="contain-box" style="border: 3px dashed #b3aca7;background-color: rgba(81, 79, 78, 0.51);"
+            id="form1">
+
+            <div class="box-left">
+
+                <details style="color: #fff; padding: 15px;">
+                    <summary>click me (detalles)</summary>
+                    <p>Este cuestionario es necesario completarlo ya que a futuro
+                        podremos usar la informacion obtenida por el usuario y asi,
+                        intentar llegar a concientizar a la gente.
+                    </p>
+                </details>
+
+            </div>
+
+            <div class="box-right">
+
+                <form id="form" name="fvalida">
+
+                    <input id="nombre" type="text" name="nombre" size="30" maxlength="100" placeholder="NOMBRE">
+
+
+
+                    <input id="email" type="email" name="direccionCorreo" placeholder="E-MAIL">
+
+                    <textarea id="opinion" type="text" name="mensage" placeholder="OPINION SOBRE EL SMOG:"></textarea>
+
+
+                    <input id="submit" type="submit" name="submit" value="ENVIAR" onclick="valida_envia()">
+
+                    <input id="submit" type="submit" name="submit" value="MOSTRAR" onclick="mostrarDatos()">
+
+                </form>
+            </div>
+        </div>
+
+
+        <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
+        <div class="linea">
+            <img src="img\linea.png">
+        </div>
+        <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
+
 
         <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
-        <div class="contain-box" style="border: 1px solid white;" id="form1">
-            <div class="box-left">
-              
-                </div>
-            <div class="box-right">
-        <form id="form" class="topBefore">	
-            <input id="name" type="text" name="name" placeholder="NOMBRE">
-            <input id="email" type="text" name="email" placeholder="E-MAIL">
-            <textarea id="OPINION" type="text" placeholder="OPINION SOBRE EL SMOG:"></textarea>
-        <input id="submit" type="submit" name="submit" value="ENVIAR">
-        </form>
+        <div class="contain-final" id="final">
+
+
+            <div class="cajaHija">
+                <p>pagina hecha por <b><i>Valentin Casas<i></b></p>
+            </div>
+
+            <div class="cajaHija">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+
+            <div class="cajaHija">
+                <p>materia: <b><i>Programacion web<i></b></p>
+            </div>
+
+            <div class="cajaHija">
+                <ion-icon name="logo-html5"></ion-icon>
+            </div>
+
+            <div class="cajaHija">
+                <p>HTML</p>
+            </div>
+
+            <div class="cajaHija">
+                <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div class="cajaHija">
+                <p>CSS</p>
+            </div>
+            
+            <div class="cajaHija">
+                <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div class="cajaHija">
+                <p>JAVASCRIPT</p>
+            </div>
+
+            <div class="cajaHija">
+                <ion-icon name="logo-github"></ion-icon>
+
+            </div>
+
+            <div class="cajaHija">
+                <p>GitHub: <b><i>ValentinCasas<i></b></p>
+            </div>
+
+   
+
         </div>
-        </div>
-        
-          
-        
-
-  <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
 
-  <div class="linea">
-    <img src="img\linea.png">
-</div>
-
-<!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
+        <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
 
 

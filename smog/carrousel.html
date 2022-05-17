@@ -15,7 +15,7 @@
 
 <!--8888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
-
+<!--
 <div class="contain-Menu">
     <img src="img\logo-pulmon (2).png">
      <div class="header">
@@ -54,8 +54,35 @@
          </ul>
      </div>
  </div>
-
+-->
 <!--8888888888888888888888888888888888888888888888888888888888888888888888888888888-->
+
+<form name="fvalida" style="margin-bottom: 300px;">
+    <table>
+    <tr>
+           <td>Nombre: </td>
+           <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+    </tr>
+    <tr>
+           <td>Edad: </td>
+           <td><input type="text" name="edad" size="3" maxlength="2"></td>
+    </tr>
+    <tr>
+           <td>Interés:</td>
+           <td>
+           <select name=interes>
+           <option value="Elegir">Elegir
+           <option value="Comercial">Contacto comercial
+           <option value="Clientes">Atención al cliente
+           <option value="Proveedores">Contacto de proveedores
+           </select>
+           </td>
+    </tr>
+    <tr>
+           <td colspan="2" align="center"><input type="button" value="Enviar" onclick="valida_envia()"></td>
+    </tr>
+    </table>
+    </form>
 
 
 <!--8888888888888888888888888888888888888888888888888888888888888888888888888888888-->
