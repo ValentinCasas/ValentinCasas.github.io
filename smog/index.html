@@ -448,13 +448,16 @@
 
             <div class="box-left">
 
-                <details style="color: #fff; padding: 15px;">
-                    <summary>click me (detalles)</summary>
-                    <p>Este cuestionario es necesario completarlo ya que a futuro
-                        podremos usar la informacion obtenida por el usuario y asi,
-                        intentar llegar a concientizar a la gente.
-                    </p>
-                </details>
+
+                <form name="mostrar">
+                    <details style="color: #fff; padding: 15px;" >
+                        <summary>click me (detalles)</summary>
+                        <p>Este cuestionario es necesario completarlo ya que a futuro
+                            podremos usar la informacion obtenida por el usuario y asi,
+                            intentar llegar a concientizar a la gente.
+                        </p>
+                    </details>
+                </form>
 
             </div>
 
@@ -464,21 +467,18 @@
 
                     <input id="nombre" type="text" name="nombre" size="30" maxlength="100" placeholder="NOMBRE">
 
-
-
                     <input id="email" type="email" name="direccionCorreo" placeholder="E-MAIL">
 
                     <textarea id="opinion" type="text" name="mensage" placeholder="OPINION SOBRE EL SMOG:"></textarea>
 
-
-                    <input id="submit" type="submit" name="submit" value="ENVIAR" onclick="valida_envia()">
-
-                    <input id="submit" type="submit" name="submit" value="MOSTRAR" onclick="mostrarDatos()">
+                    <input id="submit" type="submit" name="submit" value="ENVIAR Y MOSTRAR" onclick="valida_envia()">
 
                 </form>
             </div>
         </div>
 
+
+        
 
         <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
         <div class="linea">
@@ -490,7 +490,6 @@
         <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
         <div class="contain-final" id="final">
-
 
             <div class="cajaHija">
                 <p>pagina hecha por <b><i>Valentin Casas<i></b></p>
@@ -540,7 +539,6 @@
    
 
         </div>
-
 
         <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
