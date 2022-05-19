@@ -62,12 +62,25 @@ caption {
 /*888888888888888888888888888888888888888 CARROUSEL JS 8888888888888888888888888888888888888888888888888888888888888888888888*/
 
 .contain-carrousel{
-    width: 81%;
-    height: 400px;
+   margin-left: 8%;
+    border:1px solid rgb(61, 54, 54);
+    width: 65%;
+    height: 500px;
     padding-left: 19%;
+   
+}
+.contain-carrousel::-webkit-scrollbar-thumb{
+    background-color: rgb(213, 148, 50);
+    border-radius: 2em;
+   
 }
 
-.carrousel {
+.contain-carrousel::-webkit-scrollbar-track{
+    background-color: #353333;
+}
+
+.carrousel,.carrousel2 {
+    border:1px solid rgb(61, 54, 54);
     width: 60%;
     padding: 2em;
     transition:.4s;
@@ -76,10 +89,12 @@ caption {
     background-color: #282727;
     margin-left: 3em;
     box-shadow: 30px 30px 30px 0px #000000;
+    margin-bottom: 4em;
+  
   }
   
   .carrousel .grande {
-      
+
     width: 700%;
     display: flex;
     justify-content: space-between;
@@ -89,6 +104,31 @@ caption {
     transition: .5s;
     transform: translateX(0%);
   }
+
+  
+
+
+  .carrousel2 .grande2 {
+      
+    width: 300%;
+    display: flex;
+    justify-content: space-between;
+    transition: .4s;
+    border-radius: 1em;
+    padding: 1em;
+    transition: .5s;
+    transform: translateX(0%);
+  }
+  .carrousel2 .img {
+    width: calc( 100% / 3 - 3em);
+    height: 270px;
+    min-height: 10vh;
+    transition: .4s;
+    border-radius: 1.5rem;
+  }
+
+
+
   
   .carrousel .img {
     width: calc( 100% / 7 - 3em);
@@ -98,13 +138,13 @@ caption {
     border-radius: 1.5rem;
   }
   
-  .carrousel .img:hover {
-    opacity: 70%;
+  .carrousel .img:hover,.carrousel2 .img:hover {
     transform:translateY(-1em);
+    box-shadow: 30px 30px 100px 0px #000000;
    
   }
 
-  .carrousel .puntos {
+  .carrousel .puntos,.carrousel2 .puntos2 {
     width: 100%;
     display: flex;
     flex-flow: nowrap;
@@ -114,7 +154,7 @@ caption {
  
   }
   
-  .carrousel .punto {
+  .carrousel .punto,.carrousel2 .punto2 {
     width: 2em;
     height: 2em;
     margin-left: 1em;
@@ -124,8 +164,8 @@ caption {
    
   }
   
-  .carrousel .punto.activo {
-    background-color: rgb(197, 167, 46);
+  .carrousel .punto.activo,.carrousel2 .punto2.activo2 {
+    background-color: rgb(203, 125, 22);
   }
 
 /*8888888888888888888888888888888888888888 FINAL 888888888888888888888888888888888888888888888888888888888888888888*/
@@ -620,6 +660,7 @@ ol {
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgb(172, 160, 160);
+    
    
 }
 

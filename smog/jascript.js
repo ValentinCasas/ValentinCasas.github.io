@@ -96,11 +96,9 @@ punto.forEach((cadaPunto, i) => {
             carrousel.style.background = `#282727`
             
         } else {
-            carrousel.style.background = `rgb(80, 78, 78)`
+            carrousel.style.background = `#3d3b3b`
         }
 
-     
-        
 
         // Recorremos TODOS los punto
         punto.forEach((cadaPunto, i) => {
@@ -116,4 +114,50 @@ punto.forEach((cadaPunto, i) => {
   
 
 })
+
+/*8888888888888888888888888888888888888888888 GALERIA 2 888888888888888888888888888888888888888888888888*/
+
+
+const grande2 = document.querySelector('.grande2')
+const punto2 = document.querySelectorAll('.punto2')
+const carrousel2 = document.querySelector('.carrousel2');
+const img2 = document.querySelector('.carrousel2 .img');  //manipular las imagenes
+
+
+
+// Recorrer TODOS los punto
+punto2.forEach((cadaPunto, i) => {
+    // Asignamos un CLICK a cadaPunto
+    punto2[i].addEventListener('click', () => {
+
+        // Guardar la posición de ese PUNTO
+        let posicion = i
+        // Calculando el espacio que debe DESPLAZARSE el GRANDE
+        let operacion = posicion * -33.33 //100 dividido cantidad de imagenes
+
+        // MOVEMOS el grand
+        grande2.style.transform = `translateX(${operacion}%)`
+        if (posicion % 2 == 0) {
+            carrousel2.style.background = `#282727`
+            
+        } else {
+            carrousel2.style.background = `#3d3b3b`
+        }
+
+
+        // Recorremos TODOS los punto
+        punto2.forEach((cadaPunto, i) => {
+            // Quitamos la clase ACTIVO a TODOS los punto
+            punto2[i].classList.remove('activo2')
+            punto2[i].style.borderRadius = "4%"
+        })
+        // Añadir la clase activo en el punto que se hizo CLICK
+        punto2[i].classList.add('activo2')
+        punto2[i].style.borderRadius = "100%"
+        
+    })
+  
+
+})
+
 
