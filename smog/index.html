@@ -20,7 +20,7 @@
         <img src="img\logo-pulmon (2).png">
         <div class="header">
             <ul class="nav">
-                <li><a href="">INICIO</a></li>
+                <li><a href="#principio">INICIO</a></li>
 
                 <li><a href="tabla.html" target="_blanck">TABLA</a>
                     <ul>
@@ -452,7 +452,7 @@
                 <details
                     style="color: #fff; padding: 15px;position: absolute;z-index:10;background-color: rgb(86, 78, 78);">
                     <summary>click me (detalles)</summary>
-                    <p>Este cuestionario es necesario completarlo ya que a futuro
+                    <p>Este formulario es necesario completarlo ya que a futuro
                         podremos usar la informacion obtenida y asi,
                         intentar llegar a concientizar a la gente.
                     </p>
@@ -469,17 +469,19 @@
                 <form id="form1" name="fvalida">
 
                     <input id="nombre" type="text" name="nombre" size="30" maxlength="100" placeholder="NOMBRE">
-                    <input id="email" type="email" name="direccionCorreo" placeholder="E-MAIL">
+                  <input id="email" type="email" name="direccionCorreo" placeholder="E-MAIL">
 
+ 
+                    <input id="edad" type="number" name="edad" placeholder="EDAD" >
 
-                    <input id="edad" type="number" name="edad" min="10" placeholder="EDAD" >
-                    <input id="email" type="email" name="" placeholder="NO SE ">
-                    <input id="email" type="email" name="" placeholder="NO SE ">
-                    <input id="email" type="email" name="" placeholder="NO SE ">
-                    <input id="email" type="email" name="" placeholder="NO SE ">
-
+                   <!-- 
+                    <input id="" type="email" name="" placeholder="NO SE ">
+                    <input id="" type="email" name="" placeholder="NO SE ">
+                    <input id="" type="email" name="" placeholder="NO SE ">
+                    <input id="" type="email" name="" placeholder="NO SE ">
+-->
                     <textarea id="opinion" type="text" name="mensage" placeholder="OPINION SOBRE EL SMOG:"></textarea>
-                    <input id="submit" type="submit" name="submit" value="ENVIAR Y MOSTRAR" onclick="valida_envia()">
+                    <input id="submit" name="button" value="ENVIAR Y MOSTRAR" onclick="valida_envia()">
 
                 </form>
             </div>

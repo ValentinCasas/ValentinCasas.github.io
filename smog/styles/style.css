@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -88,7 +90,7 @@ caption {
     overflow: hidden;
     background-color: #282727;
     margin-left: 3em;
-    box-shadow: 30px 30px 30px 0px #000000;
+    box-shadow: 15px 15px 30px 0px #000000;
     margin-bottom: 4em;
   
   }
@@ -228,6 +230,7 @@ bottom:.7em;
   color: #726659;
   
   border: solid 1px #b3aca7;
+ 
 
   transition: all 0.5s;
 
@@ -259,22 +262,19 @@ bottom:.7em;
   color: #e2dedb;
 }
 
-.box-right #submit,.box-left #submit {
+.box-right #button,.box-left #button {
     position:relative;
     float:left;
   width: 97%;
   padding: 0;
   margin: -5px 0px 0px 0px;
-  
   color: #b3aca7;
-  
   outline:none;
-  
   border: 1px solid #b3aca7;
  
 }
 
-.box-right #submit:hover,.box-left #submit:hover {
+.box-right #button:hover,.box-left #button:hover {
   color: #e2dedb;
 }
 /*

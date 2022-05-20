@@ -2,72 +2,95 @@
 let countIntentos = 0;
 
 function valida_envia() {
-
-    let name=document.fvalida.nombre.value;
-    let edad = document.fvalida.edad.value;
-    let mensage = document.fvalida.mensage.value;
-    let mail = document.fvalida.direccionCorreo.value
-
-    //valido el nombre
+    
     if (countIntentos == 0) {
-        if (name.length == 0) {
-            alert("Tiene que escribir su nombre")
-            document.fvalida.nombre.focus()
-            return 0;
-        }
-        //valido el mail
+    let name=document.fvalida.nombre.value;
+    let nameCss=document.getElementById('nombre');
 
-        let buscoarroba = false
-        let buscopunto = false
-        let posicionarroba = -1
-        let posicionpunto = -1
-        for (let i = 0; i <= mail.length; i++) {
-            if (mail.charAt(i) == "@") {
-                buscoarroba = true
-                posicionarroba = i
-            }
-            else if (mail.charAt(i) == ".") {
-                buscopunto = true
-                posicionpunto = i
-            }
-        }
-        if ((buscoarroba && buscopunto) && (posicionarroba < posicionpunto)) {
-            alert("mail valido")
-        }
-        else {
-            alert("mail invalido")
-        }
+    let edad = document.fvalida.edad.value;
+    let edadCss=document.getElementById('edad');
 
-        //valido q se escriba algo
-        if (mensage.length == 0) {
-            alert("no se encontro ningun mensage")
-            document.fvalida.mensage.focus()
-            return 0;
-        }
+    let mensage = document.fvalida.mensage.value;
+    let mensageCss=document.getElementById('opinion');
 
-        //el formulario se envia
+    let mail = document.fvalida.direccionCorreo.value
+    let mailCss = document.getElementById('email');
 
 
-        if (edad >=10 && mensage.length > 0 && name.length > 0 && mail.length > 0 && buscoarroba == true && buscopunto == true) {
-            alert("Muchas gracias por enviar el formulario");
-            document.mostrar.innerHTML += "<p>" + "Nombre: " + name + "</p>";
-            document.mostrar.innerHTML += "<p>" + "Edad: " + edad + "</p>";
-            document.mostrar.innerHTML += "<p>" + "E-mail: " + mail + "</p>";
-            document.mostrar.innerHTML += "<p>" + "Opinion:</p>";
-            document.mostrar.innerHTML += "<p>" + mensage + "</p>";
-            document.fvalida.innerHTML += "<center><p>recibido</p>   <input type=checkbox checked> </center>";
-            countIntentos = countIntentos + 1;
-        } else {
-            alert("campo incompleto o mal llenado");
-
-        }
-
-        document.fvalida.submit();
-        return true;
-
-    } else {
-        alert("Campos ya completados");
+    if (name.length == 0) {
+     
+        nameCss.style.backgroundColor = `#ff01018d`;
+        nameCss.style.color = `#000`;
+        document.fvalida.nombre.focus();
+        return false;
+    }else{
+        nameCss.style.backgroundColor = `#434343`
+        nameCss.style.color = `#726659`
     }
+
+
+    //valido el mail
+
+    let buscoarroba = false
+    let buscopunto = false
+    let posicionarroba = -1
+    let posicionpunto = -1
+    for (let i = 0; i <= mail.length; i++) {
+        if (mail.charAt(i) == "@") {
+            buscoarroba = true
+            posicionarroba = i
+        }
+        else if (mail.charAt(i) == ".") {
+            buscopunto = true
+            posicionpunto = i
+        }
+    }
+    if ((buscoarroba && buscopunto) && (posicionarroba < posicionpunto)) {
+        mailCss.style.backgroundColor = `#434343`
+        mailCss.style.color = `#726659`
+    }
+    else {
+        mailCss.style.backgroundColor = `#ff01018d`
+        mailCss.style.color = `#fff`
+        return false;
+
+    }
+
+    //valido la edad
+
+    if(edad < 10 || edad.length == 0){
+        edadCss.style.backgroundColor = `#ff01018d`
+        edadCss.style.color = `#fff`
+        return false;
+    }else{
+        edadCss.style.backgroundColor = `#434343`
+        edadCss.style.color = `#726659`
+    }
+
+    //valido textArea
+
+    if (mensage.length == 0) {
+        mensageCss.style.backgroundColor = `#ff01018d`
+        mensageCss.style.color = `#fff`
+   return false;
+    }else{
+        mensageCss.style.backgroundColor = `#434343`
+        mensageCss.style.color = `#726659`
+    }
+
+    if (name.length > 0 && mensage.length > 0 && mail.length > 0 && buscoarroba == true && buscopunto == true && edad >=10 && edad.length > 0 ) {
+        document.mostrar.innerHTML += "<p>" + "Nombre: " + name + "</p>";
+        document.mostrar.innerHTML += "<p>" + "E-mail: " + mail + "</p>";
+        document.mostrar.innerHTML += "<p>" + "Edad: " + edad + "</p>";
+        document.mostrar.innerHTML += "<p>" + "Opinion:</p>";
+        document.mostrar.innerHTML += "<p>" + mensage + "</p>";
+        document.fvalida.innerHTML += "<center><p>recibido</p>   <input type=checkbox checked> </center>";
+        countIntentos = countIntentos + 1;
+    } 
+
+}else{
+    document.fvalida.button.style.backgroundColor = `#ff01018d`,2000;
+}
 }
 
 /*8888888888888888888888888888888888888888888 GALERIA 888888888888888888888888888888888888888888888888*/
