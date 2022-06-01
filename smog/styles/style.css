@@ -2,63 +2,32 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 
 body {
-    background-color: #202020;
+   /*aaaaaaaaaaaaaaaaaaaaaaa*/
     font-family: Arial, Helvetica, sans-serif;
-    
+    background-color: #202020;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%234e4956' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
 }
 
 * {
     padding: 0px;
     margin: 0px;
-
 }
 
 h1 {
     color: rgb(20, 10, 10);
-
 }
 
-P {
-
+p {
     font-family: "ArIaL", serif;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(220, 204, 204);
     line-height: 45px;
-}
-
-td {
-    color: white;
-    font-size: x-large;
-    padding: 8px;
-}
-
-td:hover {
-
-    background-color: #fff;
-    color: black;
-}
-
-th {
-    color: #f2f2f2;
-    font-size: xx-large;
-    transition: .5s;
-}
-
-th:hover {
-    color: black;
-}
-
-table {
-    background-color: rgb(66, 64, 61);
-}
-
-caption {
-    color: #f2f2f2
 }
 
 /*888888888888888888888888888888888888888 CARROUSEL JS 8888888888888888888888888888888888888888888888888888888888888888888888*/
@@ -141,8 +110,8 @@ caption {
   }
   
   .carrousel .img:hover,.carrousel2 .img:hover {
-    transform:translateY(-1em);
-    box-shadow: 30px 30px 100px 0px #000000;
+    transform:translateY(-.3em);
+    box-shadow: 30px 10px 100px 0.25px #000000;
    
   }
 
@@ -163,11 +132,13 @@ caption {
     margin-right: 1em;
     transition:.4s;
     background-color: rgb(0, 0, 0);
+    
    
   }
   
   .carrousel .punto.activo,.carrousel2 .punto2.activo2 {
     background-color: rgb(203, 125, 22);
+    border-radius: 100%;
   }
 
 /*8888888888888888888888888888888888888888 FINAL 888888888888888888888888888888888888888888888888888888888888888888*/
@@ -213,14 +184,21 @@ bottom:.7em;
 
 
 /*888888888888888888888888888888888888888 FORMULARIO 88888888888888888888888888888888888888888888888888888888888*/
-
-.box-right #form,.box-left #form {
-  position: relative;
-  width: 90%;
-  margin: 50px auto 100px auto;
+.mostrar{
+padding:15px;
+margin-top:8%;
+overflow-x:auto;
+height:350px;
+overflow-y:auto;
 }
 
-.box-right input,.box-left input {
+#form1 {
+  position: relative;
+  width: 90%;
+  margin: 25px auto 50px auto;
+}
+
+input{
   width: 90%;
   height: 50px;
   padding: 0px 15px 0px 15px;
@@ -236,12 +214,12 @@ bottom:.7em;
 
 }
 
-.box-right input:hover,.box-left input:hover {
+input:hover{
   background: #b3aca7;
   color: #e2dedb;
 }
 
-.box-right textarea,.box-left textarea {
+textarea {
     width: 90%;
   max-width: 90%;
   min-width: 70%;
@@ -257,12 +235,12 @@ bottom:.7em;
   border: solid 1px #b3aca7;
 }
 
-.box-right textarea:hover,.box-left textarea:hover {
+textarea:hover {
   background: #b3aca7;
   color: #e2dedb;
 }
 
-.box-right #button,.box-left #button {
+#submit {
     position:relative;
     float:left;
   width: 97%;
@@ -274,13 +252,15 @@ bottom:.7em;
  
 }
 
-.box-right #button:hover,.box-left #button:hover {
+#submit:hover {
   color: #e2dedb;
 }
-/*
-  .invalid {
-    border: 2px solid #ff0000;
-    }*/
+
+
+ textarea.invalid,input.invalid  {
+   background-color:rgb(219, 92, 92);
+  color :#000;
+    }
 
 /*888888888888888888888888888888888 CIRCULOS CONTENEDORES  88888888888888888888888888888888888888888888888888888888*/
 
@@ -322,11 +302,50 @@ bottom:.7em;
 .contain-tabla {
     position: relative;
     display: flex;
+    
     margin-top:100px;
-    width: 70%;
-    height:auto;
-    overflow-x:auto;
+    width: 100%;
+    height:auto; 
+    overflow: auto;
+
+    align-items:center;
+    justify-content:center;
 }
+
+
+td {
+    color: white;
+    font-size: x-large;
+    padding: 8px;
+    
+}
+
+td:hover {
+
+    background-color: #fff;
+    color: black;
+}
+
+th {
+    color: #f2f2f2;
+    font-size: xx-large;
+    transition: .5s;
+}
+
+th:hover {
+    color: black;
+}
+
+.contain-tabla table {
+    background-color: rgb(66, 64, 61);
+    width:70%;
+
+}
+
+caption {
+    color: #f2f2f2
+}
+
 
 
 /*888888888888888888888888888888888888 CERRAR 8888888888888888888888888888888888888888888888888888888888888888888888888*/
@@ -408,6 +427,7 @@ bottom:.7em;
     float: left;
     width: 48%;
     height: 100%;
+   
 
 }
 
@@ -475,7 +495,7 @@ bottom:.7em;
     border-radius: 2%;
 
     transform: translate(0px, -10px);
-    box-shadow: 5px 5px 10px rgb(14, 13, 13);
+    box-shadow: 5px 5px 10px rgb(13, 14, 13);
 
 }
 
@@ -654,6 +674,7 @@ ol {
 
 ::-webkit-scrollbar{
     width:.8em;
+    
 }
 ::-webkit-scrollbar-track{
     background-color: #434343;
@@ -663,6 +684,7 @@ ol {
     
    
 }
+
 
 /*888888888888888888888888888888888888888 RESPONSIVE 88888888888888888888888888888888888888888888888888888888888888888888888888888*/
 

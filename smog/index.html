@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <script defer language="JavaScript" src="jascript.js"></script>
+    
     <title>index</title>
 
 </head>
@@ -83,7 +84,7 @@
                 <li><a>FORMULARIO</a>
                     <ul>
                         <li><a href="#form1">form 1</a></li>
-                       
+
                     </ul>
 
                 </li>
@@ -121,9 +122,9 @@
     <div class="contain-box" id="smog-queEs">
         <div class="box-left">
             <div class="titulo">
-                <marquee direction="left" behavior=scroll scrollamount="8">
-                    <h1>¿QUÉ ES EL SMOG?</h1>
-                </marquee>
+
+                <h1>¿QUÉ ES EL SMOG?</h1>
+
             </div>
             <div class="texto">
                 <p>El smog es una forma de contaminacion ambiental que afecta al aire como tal,
@@ -163,9 +164,9 @@
         <div class="box-right">
 
             <div class="titulo">
-                <marquee direction="left" behavior=scroll scrollamount="8">
-                    <h1>¿COMO SE ORIGINA?</h1>
-                </marquee>
+
+                <h1>¿COMO SE ORIGINA?</h1>
+
             </div>
             <div class="texto">
                 <p>Se debe a una combinacion de factores:
@@ -445,43 +446,39 @@
         <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
         <div class="contain-box"
-            style="border: 3px dashed #b3aca7;background-color: rgba(81, 79, 78, 0.51);height: auto;" id="form1">
+            style="border-radius: 2em ;box-shadow: 15px 15px 30px 0px #000000;background-color: rgba(81, 79, 78, 0.51);height: auto;" id="form1">
 
             <div class="box-left">
-
                 <details
                     style="color: #fff; padding: 15px;position: absolute;z-index:10;background-color: rgb(86, 78, 78);">
                     <summary>click me (detalles)</summary>
                     <p>Este formulario es necesario completarlo ya que a futuro
                         podremos usar la informacion obtenida y asi,
-                        intentar llegar a concientizar a la gente.
-                    </p>
+                        intentar llegar a concientizar a la gente. </p>              
                 </details>
 
-                <form name="mostrar" style="padding:15px;margin-top:8%;overflow-x: auto;height: 350px;overflow-y: auto;">
-
-                </form>
-
+                <form name="mostrar" class="mostrar" id="mostrar"></form>
             </div>
-
+            
             <div class="box-right">
+                <form id="form1" name="fvalida" onsubmit="valida_envia(event)">
 
-                <form id="form1" name="fvalida">
+                    <input class="nombre" id="nombre" type="text" name="nombre" size="30" maxlength="100"
+                        placeholder="NOMBRE">
+                    <input class="email" id="email" type="email" name="direccionCorreo" placeholder="E-MAIL">
 
-                    <input id="nombre" type="text" name="nombre" size="30" maxlength="100" placeholder="NOMBRE">
-                  <input id="email" type="email" name="direccionCorreo" placeholder="E-MAIL">
 
- 
-                    <input id="edad" type="number" name="edad" placeholder="EDAD" >
+                    <input class="edad" id="edad" type="number" name="edad" placeholder="EDAD (min 10)">
 
-                   <!-- 
+                    <!--
                     <input id="" type="email" name="" placeholder="NO SE ">
                     <input id="" type="email" name="" placeholder="NO SE ">
                     <input id="" type="email" name="" placeholder="NO SE ">
-                    <input id="" type="email" name="" placeholder="NO SE ">
--->
-                    <textarea id="opinion" type="text" name="mensage" placeholder="OPINION SOBRE EL SMOG:"></textarea>
-                    <input id="submit" name="button" value="ENVIAR Y MOSTRAR" onclick="valida_envia()">
+               
+                    -->
+                    <textarea class="mensage" id="mensage" type="text" name="mensage"
+                        placeholder="OPINION SOBRE EL SMOG:"></textarea>
+                    <input class="submit" type="submit" id="submit" name="submit" value="ENVIAR Y MOSTRAR">
 
                 </form>
             </div>
@@ -548,7 +545,7 @@
         <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
 
 
-
+        
         <!-- iconos -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
