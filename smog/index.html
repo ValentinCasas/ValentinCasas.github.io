@@ -463,21 +463,30 @@
             <div class="box-right">
                 <form id="form1" name="fvalida" onsubmit="valida_envia(event)">
 
+                    <label>NOMBRE</label>
                     <input class="nombre" id="nombre" type="text" name="nombre" size="30" maxlength="100"
                         placeholder="NOMBRE">
+                        <label id="error1">AGREGAR UN NOMBRE</label>
+
+                     <label>MAIL</label>
                     <input class="email" id="email" type="email" name="direccionCorreo" placeholder="E-MAIL">
+                    <label id="error2">FALLA EN EL MAIL</label>
 
-
+                    <label>EDAD</label>
                     <input class="edad" id="edad" type="number" name="edad" placeholder="EDAD (min 10)">
-
+                    <label id="error3">LA EDAD DEBE SER MAYOR O IGUAL A 10</label>
+                    
                     <!--
                     <input id="" type="email" name="" placeholder="NO SE ">
                     <input id="" type="email" name="" placeholder="NO SE ">
                     <input id="" type="email" name="" placeholder="NO SE ">
                
                     -->
+                    <label>MENSAJE</label>
                     <textarea class="mensage" id="mensage" type="text" name="mensage"
                         placeholder="OPINION SOBRE EL SMOG:"></textarea>
+                        <label id="error4">ESCRIBIR UN MENSAJE</label>
+
                     <input class="submit" type="submit" id="submit" name="submit" value="ENVIAR Y MOSTRAR">
 
                 </form>
@@ -544,7 +553,7 @@
 
         <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
         
-          <!--888888888888888888888888888888 me olvide del comit 88888888888888888888888888888888-->
+          <!--888888888888888888888888888888 dqwwqd 88888888888888888888888888888888-->
 
 
 

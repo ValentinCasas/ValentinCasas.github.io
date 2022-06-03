@@ -184,12 +184,33 @@ bottom:.7em;
 
 
 /*888888888888888888888888888888888888888 FORMULARIO 88888888888888888888888888888888888888888888888888888888888*/
+#error1,#error2,#error3,#error4{
+    display:none;
+    color:rgb(19, 16, 16);
+    border:1px solid rgb(255, 255, 255);
+    width: 97%;
+    margin-bottom:2px;
+align-items: center;
+justify-content: center;
+font-size: small;
+box-shadow: 2px 2px 5px 1px black;
+}
+label{
+    color:rgb(24, 21, 21); 
+    padding:4px 0px 4px 0px;
+}
+
 .mostrar{
 padding:15px;
 margin-top:8%;
 overflow-x:auto;
 height:350px;
 overflow-y:auto;
+
+}
+.mostrar p{
+    font-size: medium;
+
 }
 
 #form1 {
@@ -245,7 +266,7 @@ textarea:hover {
     float:left;
   width: 97%;
   padding: 0;
-  margin: -5px 0px 0px 0px;
+  margin: 5px 0px 10px 0px;
   color: #b3aca7;
   outline:none;
   border: 1px solid #b3aca7;

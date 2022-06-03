@@ -10,21 +10,18 @@ function valida_envia(e) {
     let mensage = document.fvalida.mensage.value;
     let mail = document.fvalida.direccionCorreo.value
     
-    let errores=["Agregar un nombre","Error en el mail","La edad debe ser mayor o igual a 10","No se encontró el texto"];
     let muestroErrores="";
-    const para = document.createElement("p");
 
     if (name.length == 0) {
         document.fvalida.nombre.classList.add('invalid')
-        
-        muestroErrores = document.createTextNode(errores[0]);
-        para.appendChild(muestroErrores);
-        document.getElementById("mostrar").appendChild(para);
+    
+        document.getElementById("error1").style.display= `flex`;
 
         document.fvalida.nombre.focus();
         return false;
     }else{
         document.fvalida.nombre.classList.remove('invalid')
+        document.getElementById("error1").style.display= `none`;
         
     }
    
@@ -46,13 +43,13 @@ function valida_envia(e) {
     }
     if ((buscoarroba && buscopunto) && (posicionarroba < posicionpunto)) {
         document.fvalida.email.classList.remove('invalid')
+        document.getElementById("error2").style.display= `none`;
+
     }
     else {
         document.fvalida.email.classList.add('invalid')
-
-        muestroErrores = document.createTextNode(errores[1]);
-        para.appendChild(muestroErrores);
-        document.getElementById("mostrar").appendChild(para);
+document.getElementById("error2").style.display= `flex`;
+        
         
         return false;
     }
@@ -60,14 +57,12 @@ function valida_envia(e) {
     //valido la edad
     if(edad < 10 || edad.length == 0){
         document.fvalida.edad.classList.add('invalid')
-
-            muestroErrores = document.createTextNode(errores[2]);
-            para.appendChild(muestroErrores);
-            document.getElementById("mostrar").appendChild(para);
+        document.getElementById("error3").style.display= `flex`;
          
         return false;
     }else{
         document.fvalida.edad.classList.remove('invalid')
+        document.getElementById("error3").style.display= `none`;
     }
 
 
@@ -76,27 +71,16 @@ function valida_envia(e) {
     //valido textArea
     if (mensage.length == 0) {
         document.fvalida.mensage.classList.add('invalid')
-
-           muestroErrores = document.createTextNode(errores[3]);
-           para.appendChild(muestroErrores);
-            document.getElementById("mostrar").appendChild(para);
+        document.getElementById("error4").style.display= `flex`;
          
    return false;
     }else{
         document.fvalida.mensage.classList.remove('invalid')
+        document.getElementById("error4").style.display= `none`;
     }
 
-
-
-    document.getElementById("mostrar").parentNode.removeChild(para);
-    // document.getElementById("mostrar").removeChild(mostrarErrores);
-   // document.getElementById("mostrar").removeChild(errores[i]);
-   
-        
-   // document.getElementById("mostrar").removeChild(errores);
-//AAAAAAAAAAAAAAAAAA
-    
-
+  
+ const para=document.createElement("p");
 
 // Creo un nodo texto:
 const muestroNombre = document.createTextNode("Nombre: " + name+" - ");
